@@ -63,11 +63,11 @@ namespace Q42.HueApi
 			CheckInitialized();
 
 			if (scene == null)
-				throw new ArgumentNullException(nameof(scene));
+				//throw new ArgumentNullException(nameof(scene)); TODO: Repair all of these
 			if (scene.Lights == null)
-				throw new ArgumentNullException(nameof(scene.Lights));
+				//throw new ArgumentNullException(nameof(scene.Lights));
 			if (scene.Name == null)
-				throw new ArgumentNullException(nameof(scene.Name));
+				//throw new ArgumentNullException(nameof(scene.Name));
 
 			//Filter non updatable properties
 			scene.FilterNonUpdatableProperties();
@@ -161,7 +161,7 @@ namespace Q42.HueApi
 			if (id.Trim() == String.Empty)
 				throw new ArgumentException("id must not be empty", "id");
 			if (scene == null)
-				throw new ArgumentNullException(nameof(scene));
+				//throw new ArgumentNullException(nameof(scene));
 
 			//Set these fields to null
 			scene.Id = null;
